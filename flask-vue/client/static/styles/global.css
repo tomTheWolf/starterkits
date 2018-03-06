@@ -1,0 +1,14 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  background-color: #d0edf0;
+}
+
+.fill-parent {
+  height: 100%;
+  z-index: 0;
+}
