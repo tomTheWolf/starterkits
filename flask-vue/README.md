@@ -1,15 +1,10 @@
-# purplecow
+# A Vue.js front-end served by a Flask back-end, minimal boilerplate and sane directory structure
 
-> A Vue.js project
-
-## Build Setup
+## Build client code
 
 ``` bash
 # install dependencies
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
 
 # build for production with minification
 npm run build
@@ -24,4 +19,12 @@ npm run unit
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Build docker image
+``` bash
+docker build -t flask-vue .
+```
+
+## Run docker image
+``` bash
+docker run -p 5000:5000 -t flask-vue
+```
